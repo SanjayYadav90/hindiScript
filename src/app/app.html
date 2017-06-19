@@ -1,6 +1,6 @@
 <!-- <ion-nav [root]="rootPage"></ion-nav> -->
 
-<ion-menu [content]="content">
+<ion-menu [content]="content" side="left" class="side-menu" type="overlay">
 
   <ion-header>
     <ion-toolbar>
@@ -18,4 +18,11 @@
 
 </ion-menu>
 
-<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>
+
+<style type="text/css">
+  .side-menu {
+    width: 100%;
+    opacity: 0.97;
+  }
+</style>
