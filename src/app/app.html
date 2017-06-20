@@ -8,9 +8,9 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
+  <ion-content class="side-menu-main-container">
     <ion-list>
-      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
+      <button class="list-container" ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>
     </ion-list>
@@ -24,5 +24,11 @@
   .side-menu {
     width: 100%;
     opacity: 0.97;
+  }
+  .side-menu-main-container {
+    background-color: gainsboro;
+  }
+  .list-container {
+    background-color: gainsboro;
   }
 </style>
