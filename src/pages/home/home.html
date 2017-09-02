@@ -1,6 +1,6 @@
 <ion-header>
    <ion-navbar>
-      <ion-title>Hindi Typing</ion-title>
+      <ion-title>हिंदी टाइपिंग...</ion-title>
       <ion-buttons left side="left">
          <button menuToggle>
             <ion-icon name="menu"></ion-icon>
@@ -9,19 +9,28 @@
    </ion-navbar>
 </ion-header>
 <ion-content padding class="background-blinker default-color">
-   <h2>Welcome to Ionic!</h2>
-   <p>
-      This starter project comes with simple tabs-based layout for apps
-      that are going to primarily use a Tabbed UI.
-   </p>
-   <p>
-      Take a look at the <code>src/pages/</code> directory to add or change tabs,
-      update any existing page or create new pages.
-   </p>
-   <ion-list>
-      <button>Start now</button>
-      <a href="#" onclick="window.open('web/hinglish.html', '_self', 'location=yes'); return false;">
-External Link Profile
-</a>
+   <h2 text-center>हिंदी टंकण(टाइपिंग) में आपका स्वागत है |</h2>
+      <p>
+         आपको English नई आती, तो कोई बात नहीं|
+         अब आपको परेशान होने की जरुरत नहीं |
+      </p>
+      <p>
+      यहाँ आप अपनी बातो को आसानी से लिख सकते है| इतना ही नहीं अपनी बातो को अपने दोस्तों, रिस्तेदारो या घर वालों के साथ बाँट (Share) भी कर सकते है |
+      </p>
+   <ion-list text-center>
+      <ion-buttons ion-button color="dark">
+         <button side="right" class="btn-color" [navPush]="aboutPage">और जाने...</button>
+      </ion-buttons>
+   
+      <ion-buttons side="right" style="margin: 23% 0% 0% 0%" >
+        <a href="web/hinglish.html">
+           <button ion-button round outline color="secondary">
+               शुरू करने के लिए बटन दवाये
+           </button>
+        </a>
+      </ion-buttons>
+     <!--  <a href="#" onclick="window.open('web/hinglish.html', '_self', 'location=yes'); return false;">
+            शुरू करने के लिए बटन दवाये 
+      </a> -->
    </ion-list>
 </ion-content>
