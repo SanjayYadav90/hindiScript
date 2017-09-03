@@ -13,22 +13,16 @@
 </ion-header>
 
 
-<ion-content padding>
-<ion-row>
-<h1> type here </h1>
-</ion-row>
-<ion-list>
-<ion-row class="iframe_container">
+<ion-content padding class="background-blinker default-color">
+	<h1> type here </h1>
+	<ion-row class="iframe_container">
       
-       <iframe id="iframeID" frameborder="0" width="100%" height="250" >
-         <a class="item" href="#" onclick="window.open('http://www.nraboy.com/contact', '_self', 'location=yes'); return false;">
-                Open a Browser
-            </a>
+       
+      <iframe class= "webPage" [src]='page' width="100%" height="250" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+      
       </iframe>
     <!--  <a href="#" onclick="window.open('web/hinglish.html', '_self', 'location=yes'); return false;">
             शुरू करने के लिए बटन दवाये 
       </a> -->
-   </ion-row>
-</ion-list>
-
+   	</ion-row>
 </ion-content>
