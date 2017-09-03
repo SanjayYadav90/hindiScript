@@ -37,7 +37,7 @@ page-script {
     overflow: auto; 
     position: relative; 
     -webkit-overflow-scrolling: touch;
-    height:80%;
+    height:90%;
   }
 
   iframe {
@@ -47,5 +47,11 @@ page-script {
     width: 100%;
     height: 99%;
     /*padding: 1% 2% 1% 4%;*/
+  }
+
+  .webPage {
+	width: 100%;
+	height: 100%;
+	background-color: #427cbb;
   }
 }

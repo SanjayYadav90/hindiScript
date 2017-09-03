@@ -24,10 +24,8 @@ export class ScriptPage {
   page: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public sanitizer: DomSanitizer) {
-  	// let url = 'https://www.thepolyglotdeveloper.com/2014/07/launch-external-urls-ionicframework/';
   	let url = 'web/hinglish.html';
     this.page = this.sanitizer.bypassSecurityTrustResourceUrl(url);
-    // console.log(this.url);
   }
 
   ionViewDidLoad() {
