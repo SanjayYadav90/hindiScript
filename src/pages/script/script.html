@@ -1,28 +1,26 @@
-<!--
-  Generated template for the ScriptPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>रचना पृष्ठ...</ion-title>
-  </ion-navbar>
-
+   <ion-navbar>
+      <ion-title>रचना पृष्ठ...</ion-title>
+      <ion-buttons left side="left">
+         <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+         </button>
+      </ion-buttons>
+   </ion-navbar>
 </ion-header>
-
 
 <ion-content padding class="background-blinker default-color">
 	<h2 text-center> बस लिखते जाओ ...</h2>
+   <!-- <ion-icon (click)="shareInfo()" name="arrow-dropdown"></ion-icon> -->
+      
 	<ion-row class="iframe_container">
       
-       
       <iframe class= "webPage" [src]='page' width="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
 
       </iframe>
     <!--  <a href="#" onclick="window.open('web/hinglish.html', '_self', 'location=yes'); return false;">
             शुरू करने के लिए बटन दवाये 
       </a> -->
-   	</ion-row>
+	</ion-row>
+   <button ion-button color="danger" (click)="shareInfo()" > Share</button>
 </ion-content>

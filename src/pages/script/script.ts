@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 
 // import { SafeResourceUrl, DomSanitizationService } from '@angular/platform-browser';
@@ -23,13 +24,27 @@ export class ScriptPage {
   url: any;
   page: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public sanitizer: DomSanitizer) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public sanitizer: DomSanitizer, private socialSharing: SocialSharing) {
   	let url = 'web/hinglish.html';
     this.page = this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ScriptPage');
+  }
+
+  
+
+  shareInfo() {
+    this.socialSharing.share("demo message", "Demo subject", "file", "https://ampersandacademy.com").
+    // this.socialSharing.shareViaFacebook("demo message", "Demo subject", "https://ampersandacademy.com").
+    then(() => {
+      alert("Sharing success");
+    // Success!
+    }).catch(() => {
+    // Error!
+      alert("Share failed");
+    });
   }
 
 }
