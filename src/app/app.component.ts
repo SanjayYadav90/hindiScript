@@ -6,6 +6,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { ScriptPage } from '../pages/script/script';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,10 +33,11 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Tab Page', component: TabsPage },
-      { title: 'About Page', component: AboutPage },
-      { title: 'Contact Page', component: ContactPage },
-      { title: 'Home Page', component: HomePage }
+      { title: 'Tab पृष्ठ ', component: TabsPage },
+      { title: 'मुख्य पृष्ठ ', component: HomePage },
+      { title: 'जीवनी पृष्ठ ', component: AboutPage },
+      { title: 'रचना पृष्ठ ', component: ScriptPage },
+      { title: 'संपर्क पृष्ठ ', component: ContactPage }
     ];
   }
 
